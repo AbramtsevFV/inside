@@ -51,7 +51,6 @@ class JWTAuthentication(authentication.BaseAuthentication):
         # решение, потому что возможна ошибка, не сделай мы этого.
         prefix = auth_header[0]
         token = auth_header[1]
-        print(token)
         if prefix.lower() != auth_header_prefix:
             # Префикс заголовка не тот, который мы ожидали - отказ.
             return None
@@ -66,7 +65,7 @@ class JWTAuthentication(authentication.BaseAuthentication):
         вернуть пользователя и токен, иначе - сгенерировать исключение.
         """
         try:
-            payload = jwt.decode(token, settings.SECRET_KEY, algorithms=['HS256'])
+            payload = jwt.decode(token, settings.SECRET_KEY, algorithms='HS256')
         except Exception:
             msg = 'Ошибка аутентификации. Невозможно декодировать токену'
             raise exceptions.AuthenticationFailed(msg)

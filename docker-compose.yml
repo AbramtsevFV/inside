@@ -12,20 +12,20 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-#  web:
-#    restart: unless-stopped
-#    build: .
-#    command:
-#      - bash
-#      - ./docker/django-dev.sh
-#    volumes:
-#      - ./static:/data/django-static
-#      - .:/code
-#    ports:
-#      - "8000:8000"
-#    environment:
-#      - POSTGRES_NAME=postgres
-#      - POSTGRES_USER=postgres
-#      - POSTGRES_PASSWORD=postgres
-#    depends_on:
-#      - db
+  web:
+    restart: unless-stopped
+    build: .
+    command:
+      - bash
+      - ./docker/django-dev.sh
+    volumes:
+      - ./static:/data/django-static
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      - db

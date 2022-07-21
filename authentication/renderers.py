@@ -13,10 +13,7 @@ class UserJSONRenderer(JSONRenderer):
         token = data.get('token', None)
 
         if token is not None and isinstance(token, bytes):
-            # Как говорится выше, декодирует token если он имеет тип bytes.
             data['token'] = token.decode('utf-8')
 
         # Наконец, мы можем отобразить наши данные в простанстве имен 'user'.
-        return json.dumps({
-            'user': data
-        })
+        return json.dumps(data)
