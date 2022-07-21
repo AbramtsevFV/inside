@@ -62,7 +62,7 @@
     }
    ]
    ````
-   ### Запуск Тестов из  Docker ###
+   ### Запуск Тестов из Docker ###
 1. Выполняем команду
 ```
-  docker-compose run --rm api ./manage.py test
+  docker-compose run --rm web ./manage.py test
