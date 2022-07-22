@@ -32,7 +32,6 @@ class JWTAuthentication(authentication.BaseAuthentication):
         # 2) сам JWT, по которому мы должны пройти аутентифкацию
         auth_header = authentication.get_authorization_header(request).decode('utf-8').split("_", maxsplit=1)
         auth_header_prefix = self.authentication_header_prefix.lower()
-        print(auth_header)
         if not auth_header:
             return None
 
