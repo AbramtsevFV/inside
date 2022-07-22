@@ -7,6 +7,7 @@ from authentication.models import User
 
 
 class StorageAPITestCase(APITestCase):
+    """ Проверяем создание записей в бд и возврат их пользователю"""
 
     def setUp(self):
         self.data_unload_test = json.dumps({
