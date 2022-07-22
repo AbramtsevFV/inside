@@ -1,5 +1,7 @@
 ### Inside
-[Задание](https://cloud.mail.ru/public/8Zje/V1dgCCM44)
+[Задание](https://cloud.mail.ru/public/8Zje/V1dgCCM44) 
+
+[Файл с CURL запросами](https://cloud.mail.ru/public/twMx/uHbLEGubY)
 ## Управление ##
 ### Запуск Docker ###
 1) Выполняем команду: 
