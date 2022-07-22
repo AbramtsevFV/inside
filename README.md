@@ -2,6 +2,8 @@
 [Задание](https://cloud.mail.ru/public/8Zje/V1dgCCM44) 
 
 [Файл с CURL запросами](https://cloud.mail.ru/public/twMx/uHbLEGubY)
+
+[dockerhub](https://hub.docker.com/repository/docker/abramtsevfv/inside_task_web)
 ## Управление ##
 ### Запуск Docker ###
 1) Выполняем команду: 
